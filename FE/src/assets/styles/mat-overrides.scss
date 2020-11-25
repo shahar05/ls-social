@@ -1,0 +1,46 @@
+@import "/src/assets/styles/variables.scss";
+
+.mat-dialog-container{
+  padding: 0 !important;
+}
+
+.mat-form-field-wrapper {
+  padding: 5px;
+}
+
+.mat-raised-button.mat-primary {
+  color: $button-font-color;
+  background-color: $card-background-color;
+}
+
+.mat-raised-button:hover {
+  color: $card-background-color;
+  background-color: $button-font-color;
+}
+.mat-form-field-appearance-outline .mat-form-field-outline {
+  color: $card-background-color;
+}
+
+.mat-error {
+  margin-top: 10px;
+}
+
+.mat-mini-fab.mat-primary {
+  background-color: $primary-button-color;
+  color: $font-color;
+}
+
+.mat-mini-fab.mat-warn {
+  background-color: $like-color;
+  color: $font-color;
+}
+
+.mat-mini-fab.mat-primary:hover {
+  color: $primary-button-color;
+  background-color: $font-color;
+}
+
+.mat-mini-fab.mat-warn:hover {
+  color: $like-color;
+  background-color: $font-color;
+}

@@ -1,0 +1,10 @@
+<button class="create-post-float-button" mat-mini-fab color="primary" (click)="createPost()">
+  <mat-icon>add</mat-icon>
+</button>
+
+<div *ngIf="(user$ | async) as user" #feedContainer (scroll)="onScroll()" class="feed-container">
+  <div class="post-container col-xl-3 col-lg-5 col-md-8 col-12">
+    <app-post *ngFor="let post of posts" (likeClicked)="likeToggle($event)" (editClicked)="postEditClicked($event)"
+      (deleteClicked)="postDeleteClicked($event)" [user]="user" [post]="post"></app-post>
+  </div>
+</div>

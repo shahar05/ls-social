@@ -1,0 +1,6 @@
+<div class="d-flex header-container">
+    <div *ngIf="(user$ | async) as user" class="icons-box col">
+        <span class="material-icons" (click)="logout()" routerLink="/home"> logout</span>
+        <span class="username-text" >{{user.username}}</span>
+    </div>
+</div>

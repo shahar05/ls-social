@@ -1,0 +1,69 @@
+@import "/src/assets/styles/variables.scss";
+:host {
+  width: 100%;
+}
+
+.mat-card {
+  margin-top: 20px;
+  padding: 0;
+  box-shadow: 3px 3px 8px 2px rgba(0, 0, 0, 0.3);
+  background-color: $card-background-color;
+  position: relative;
+  .post-porfile-image {
+    position: absolute;
+    top: 170px;
+    left: 10px;
+    border-radius: 50px;
+    padding: 20px ;
+    background-color: $font-color;
+    text-align: center;
+    font-weight: 500;
+    font-size: 15px;
+    box-shadow: 0 8px 6px -6px rgb(0, 0, 0, 0.3);
+  }
+  .post-image {
+    height: 200px;
+    width: 100%;
+    border-radius: 4px 4px 0 0;
+  }
+  .post-card-container {
+    padding: 30px;
+    .post-name {
+      margin-bottom: 30px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 20px;
+      color: $font-color;
+    }
+    .post-description {
+      border-radius: 5px;
+      padding: 40px 10px;
+      background-color: $font-color;
+      text-align: center;
+      font-weight: 500;
+      font-size: 15px;
+      box-shadow: 0 8px 6px -6px rgb(0, 0, 0, 0.3);
+    }
+
+  }
+
+  .post-button-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px 5px 5px  ;
+    .post-like-box{
+      .post-like-count{
+        color: $font-color;
+      }
+      .like-icon {
+        color: $font-color;
+        &.like {
+          color: $like-color;
+        }
+      }
+    }
+  }
+
+
+ 
+}

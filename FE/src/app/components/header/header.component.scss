@@ -1,0 +1,30 @@
+@import "/src/assets/styles/variables.scss";
+
+.header-container {
+    background-color: $card-background-color;
+    height: 50px;
+    padding: 5px;
+     width: 100%;
+    // position: fixed;
+    // top: 0;
+    z-index: 1;
+    box-shadow: 0 8px 6px -6px rgb(0, 0, 0, 0.3);
+
+    .icons-box {
+        margin-left: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .username-text{
+            color: $font-color;
+            font-weight: 600;
+        }
+        .material-icons {
+            font-size: 25px;
+            color: $site-background-color;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}

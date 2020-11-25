@@ -1,0 +1,21 @@
+@import "/src/assets/styles/variables.scss";
+
+.mat-card {
+    padding: 0;
+    .entry-title {
+        padding: 10px;
+        background-color: $card-background-color;
+        color: $font-color;
+        text-align: center;
+        box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.3);
+    }
+    .entry-input-box {
+        padding: 15px;
+        margin: 0 30px;
+        display: flex;
+        flex-direction: column;
+        .entry-submit-button {
+            margin: 10px 0;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+<mat-card >
+    <h1 class="entry-title"> {{ title}}</h1>
+
+    <div [formGroup]="form" class="entry-input-box">
+
+        <mat-form-field appearance="outline">
+            <mat-label>Name</mat-label>
+            <input type="text" matInput formControlName="name" />
+            <mat-error> Field is required</mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Description</mat-label>
+            <input type="text" matInput formControlName="description" />
+            <mat-error> Field is required </mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Image</mat-label>
+            <ngx-mat-file-input [valuePlaceholder]="fileName" (change)="handleInputChange($event)" formControlName="image">
+            </ngx-mat-file-input>
+            <mat-error> Invalid file type</mat-error>
+        </mat-form-field>
+
+        <button (click)="submit()" mat-raised-button color="primary" class="entry-submit-button">
+            {{ title }}
+        </button>
+
+    </div>
+</mat-card>

@@ -1,0 +1,8 @@
+/* You can add global styles to this file, and also import other style files */
+@import '/src/assets/styles/variables.scss';
+@import '/src/assets/styles/mat-overrides.scss';
+body { 
+    overflow: hidden;
+    background-color: $site-background-color;
+ }
+
